@@ -14,8 +14,11 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.96.88.235
   environments:
   - key: dev
+    owner: gykyoung
+    repository: jx3-minikebe
   - key: staging
   - key: production
   ingress:
@@ -27,6 +30,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: gykyoung
   repository: bucketrepo
   secretStorage: local
   vault: {}

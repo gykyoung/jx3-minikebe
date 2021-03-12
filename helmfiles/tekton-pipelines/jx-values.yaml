@@ -31,10 +31,12 @@ jxRequirements:
     provider: minikube
   environments:
   - key: dev
+    owner: gykyoung
+    repository: jx3-minikebe
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 192.168.64.2.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
@@ -42,6 +44,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: gykyoung
   repository: bucketrepo
   secretStorage: local
   vault: {}
