@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: gykyoung
+    provider: github
+    repository: sample01
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: gykyoung-sample01
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/gykyoung/sample01.git
+  org: gykyoung
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: sample01
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/gykyoung/sample01
