@@ -24,7 +24,7 @@ spec:
     metadata:
       annotations:
         ad.datadoghq.com/keeper.logs: '[{"source":"lighthouse","service":"keeper"}]'
-        jenkins-x.io/hash: '51aa025042f9f39828c3c7c714bf128680bbb14ccbaa3953b8dbb5347b7297b5'
+        jenkins-x.io/hash: 'dbc748dfc97bb2c2fbcd711176ac94313c9ad986264971960bb987a45d8552f9'
       labels:
         app: lighthouse-keeper
     spec:
